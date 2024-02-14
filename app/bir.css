@@ -1,0 +1,50 @@
+a{
+position: relative;
+}
+
+a::after{
+ content: " ";
+ position: absolute;
+ background-color: yellow;
+ height: 3px;
+ width: 0;
+ left: 0;
+ bottom: -5px;
+ transition: 0.3s;
+}
+
+
+a:hover{
+    color: white;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+
+
+.card:hover .card-overlay {
+    opacity: 1;
+  }
+  
+  .card-overlay {
+    background-color: aliceblue;
+    color: black;
+  }
+  
+  .card-overlay h3,
+  .card-overlay p {
+    transform: translateY(20px);
+    transition-property: transform;
+    transition-duration: 300ms;
+  }
+  
+  .card:hover .card-overlay h3,
+  .card:hover .card-overlay p {
+    transform: translateY(0);
+  }
+
+
+  /**.....................*/
+
